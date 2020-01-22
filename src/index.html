@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.scss" />
+  </head>
+  <body>
+    <div class="load">
+      <p>LOADING</p>
+    </div>
+    <main class="content">
+      <section class="first--section">
+        <div class="name">
+          <p class="name--first" data-text="HUGO">HUGO</p>
+          <p class="name--last" data-text="BORINI">BORINI</p>
+        </div>
+        <div class="competencies">
+          <p class="competencies--skill">WEB DEV FRONT DEV / BACK</p>
+          <p class="competencies--project">CHECK MY PROJECT</p>
+        </div>
+      </section>
+    </main>
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery.min.js"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(".content").css("display", "none");
+        $(".load").fadeOut(3000, function() {
+          $(".content").fadeIn(3000);
+        });
+      });
+    </script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
